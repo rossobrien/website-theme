@@ -1,0 +1,23 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+.post-img {
+  border-bottom: 1px solid #111;
+  border-top: 1px solid #111;
+  text-align: center;
+  font-style: italic;
+  margin: 20px 0px;
+  padding: 10px 0px;
+}
+
+.post-img .img-responsive, .post-img iframe {
+  margin: 10px auto;
+  width: 90%;
+  display: block;
+}
+
+
+/* Responsive */
+

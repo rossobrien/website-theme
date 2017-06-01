@@ -1,0 +1,36 @@
+{{!< default}}
+
+<main class="content" role="main">
+
+	<article class="{{post_class}}">
+     
+      {{! Everything inside the #post tags pulls data from the post }}
+      {{#post}}
+
+      <header id="header" {{#if image}} style="background-image: url({{image}})"{{/if}}>
+        <div class="header-background">
+          <section class="header-content">
+            <h1 class="post-title">{{{title}}}</h1>
+            <div class="post-meta text-muted">
+              <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='MMM DD YYYY'}}</time>
+              {{#if tags}} | {{tags}}{{/if}}
+            </div>
+          </section>
+        </div>
+      </header>
+
+      {{! Everything below outputs content of the the post which has been published }}
+
+      <div class="row">
+        <div class="col-lg-12">
+          <section class="post-content">
+          	{{content}}
+          </section>
+        </div>
+      </div>
+
+      {{/post}}
+
+    </article>
+
+  </main>
