@@ -44,6 +44,7 @@ hr {
   text-align: center;
   border-radius: 0;
   border-bottom: 1px solid #111;
+  line-height: 1;
 }
 
 .navbar>.container {
@@ -410,7 +411,7 @@ hr {
   }
 
   .nav-pills>li, .navbar-brand {
-    float: inherit;
+    float: none;
   }
 
   .navbar-brand {
@@ -419,7 +420,8 @@ hr {
 
   .nav {
     margin-top: 0px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
 
